@@ -3,26 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Climate Crisis Indicators</title>
   </head>
   <body>
     <h1>Climate Crisis Indicators</h1>
-    <div class="Statistics">UK flooding events in the last 12 months: XXX</div>
+    <p id="ukFlood"></p>
+    <style>
+      :root {
+        --main-bg-color: rgb(205, 216, 215);
+        --main-font-color: rgb(30, 68, 63);
+        --main-header-color: rgb(13, 39, 70);
+        --main-font-family: "Shippori Mincho B1", serif;
+      }
+      body {
+        background: var(--main-bg-color);
+        color: var(--main-font-color);
+        font-family: var(--main-font-family);
+      }
+      h1 {
+        color: var(--main-header-color);
+        font-family: var(--main-font-family);
+      }
+    </style>
+    <script>
+      function getUKFloods() {
+        var ukFloods = 100;
+        return ukFloods;
+      }
+      document.getElementById("ukFlood").innerHTML =
+        "UK flooding: " + getUKFloods();
+    </script>
   </body>
-  <style>
-    :root {
-      --main-bg-color: rgb(162, 170, 169);
-      --main-font-color: rgb(30, 68, 63);
-      --main-header-color: rgb(13, 39, 70);
-    }
-    body {
-      background: var(--main-bg-color);
-      color: var(--main-font-color);
-      font-family: var(--main-font-family);
-    }
-    h1 {
-      color: var(--main-header-color);
-      font-family: var(--main-font-family);
-    }
-  </style>
 </html>
